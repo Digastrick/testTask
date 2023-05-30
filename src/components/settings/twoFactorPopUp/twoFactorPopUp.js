@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './twoFactorPopUp.scss';
 import { SettingsTitle } from '../settingsTitle/settingsTitle';
 import { IconsCross } from '../../icons/iconCross/iconCross';
