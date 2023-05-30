@@ -16,22 +16,23 @@ export const Settings = ({Thems,clickTwoFactor,closeTwoFactor}) => {
         <div>
         <div className={Thems ? 'white-thems' : 'dark-thems'}>
         <div className={clickTwoFactor ? 'nonsettings' : ' settings  d-flex flex-column align-start'}>
-            <div className='settings__info d-flex flex-row'>
+            <div className='settings__info mb-25 d-flex flex-row'>
                     <IconsSettings Thems={Thems}/> 
-                    <div className=' d-flex flex-column gap-4'>
-                    
+                    <div className=' ml-25 d-flex flex-column margin-4'>         
                         <SettingsTitle 
                         nameTitle={'Настройки'}
                         colorTitle = {Thems ?{color:"#252525"}:{color:"#F5F5F5"}}
                         />
-                        <SettingsItem
+                        <div className='mt-5'>
+                        <SettingsItem 
                         text={'Логин: 777777777'}
                         colorText = {{color:"#919191"}}
                     />
                     </div>
+                    </div>
             </div>
-            <div className='settings__second-auth d-flex flex-column gap-4'>
-                <div className='settings__second-auth-link clear d-flex justify-between '
+            <div className='settings__second-auth mb-25 d-flex flex-column margin-4'>
+                <div className='settings__second-auth-link mb-5 clear d-flex justify-between '
                     onClick={closeTwoFactor}
                     >
                 <SettingsItem
@@ -44,14 +45,14 @@ export const Settings = ({Thems,clickTwoFactor,closeTwoFactor}) => {
                 text={'Не подключена'}
                 colorText = {{color:"#919191"}}/>
             </div>
-            <div className='settings__item-wrapper d-flex justify-between'>
+            <div className='settings__item-wrapper mb-25 d-flex justify-between'>
             <SettingsItem
             text={'Настройки безопасности и API'}
             colorText = {Thems ?{color:"#1FA2DE"}:{color:"#31BEFF"}}
             />
             <IconsArrow Thems={Thems}/>
             </div>  
-            <div className='settings__item-wrapper d-flex justify-between'>
+            <div className='settings__item-wrapper mb-25 d-flex justify-between'>
             <SettingsItem
             text={' Все протоколы интеграции'}
             colorText = {Thems ?{color:"#1FA2DE"}:{color:"#31BEFF"}}
