@@ -33,7 +33,8 @@ export const Settings = ({Thems,clickTwoFactor,closeTwoFactor}) => {
             </div>
             <div className='settings__second-auth d-flex flex-column gap-4'>
                 <a className='settings__second-auth-link d-flex justify-between '
-                    onClick={closeTwoFactor}>
+                    onClick={closeTwoFactor}
+                    href='#'>
                 <SettingsItem
                 text={'Двухфакторная аутентификация'}
                 colorText = {Thems ?{color:"#1FA2DE"}:{color:"#31BEFF"}}
