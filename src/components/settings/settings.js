@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import './settings.scss';
 import { SettingsItem } from './settingsItem/settingsItem';
 import { SettingsButton } from './settingsButton/settingsButton';
@@ -32,15 +31,15 @@ export const Settings = ({Thems,clickTwoFactor,closeTwoFactor}) => {
                     </div>
             </div>
             <div className='settings__second-auth d-flex flex-column gap-4'>
-                <a className='settings__second-auth-link d-flex justify-between '
+                <div className='settings__second-auth-link clear d-flex justify-between '
                     onClick={closeTwoFactor}
-                    href='#'>
+                    >
                 <SettingsItem
                 text={'Двухфакторная аутентификация'}
                 colorText = {Thems ?{color:"#1FA2DE"}:{color:"#31BEFF"}}
                 />
                 <IconsEdit Thems={Thems} />
-                </a>
+                </div>
                 <SettingsItem 
                 text={'Не подключена'}
                 colorText = {{color:"#919191"}}/>
