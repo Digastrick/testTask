@@ -1,0 +1,6 @@
+@import '../../../mixins/mixins.scss';
+@import '../../../variables/variables.scss';
+
+.settingsTitle{
+    @include bodyTitle();
+}

@@ -1,0 +1,46 @@
+@import '../../mixins/mixins.scss';
+@import '../../variables/variables.scss';
+.gap-4{
+    gap:4px;
+}
+.dark-thems{
+    background-color: #252525;
+    border: none;
+}
+.white-thems{
+    background-color: white;
+    border: 1px solid #E2E2E2;
+}
+.dark-thems-icons *{
+    fill: $color-lightBlue;
+}
+.settings{
+    z-index: 1;
+    max-width: 398px;
+    width: 100vw;
+    max-height: 310px;
+    height: 100vh;
+    box-sizing: border-box;
+    border-radius: 4px;
+    gap:24px;
+    padding: 24px;
+    &__info{
+        gap:24px;
+        padding: 0;
+        max-height: 50px;      
+         
+    }
+    &__second-auth{
+        width: 100%;
+        cursor: pointer;
+        &-link{
+            width: 100%;   
+        }     
+    }
+    &__item-wrapper{
+        width: 100%;   
+    } 
+}
+.nonsettings{
+    display: none !important;
+}

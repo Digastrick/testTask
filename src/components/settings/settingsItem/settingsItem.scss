@@ -1,0 +1,4 @@
+@import '../../../mixins/mixins.scss';
+.settings__item{
+    @include bodyNormal();
+}

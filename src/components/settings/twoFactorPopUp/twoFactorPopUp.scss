@@ -1,0 +1,41 @@
+@import '../../../variables/variables.scss';
+.two-factop-pop-up{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    max-width: 594px;
+    width: 100vw;
+    max-height: 232px;
+    height: 100vh;
+    &__cross-wrapper{
+        cursor: pointer;
+    justify-content: flex-end;
+    padding: 19px 19px 0px 0px;
+    }
+    &__text-wrapper{
+        padding: 15px 0px 24px 48px;
+    }
+    &__text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+.IconCross{
+    position: absolute;
+}
+.hidden{
+    display: block;
+}
+.nonhidden{
+    display: none;
+}
+.two-factop-pop-up_white{
+    background: #FFFFFF;
+    color: $color-dark;
+}
+.two-factop-pop-up_dark{
+    background-color: $color-dark;
+    color: #F8F8F8;
+}

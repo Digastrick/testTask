@@ -1,0 +1,12 @@
+@import '../../../variables/variables.scss';
+.icon-settings{
+    width: 50px;
+    height: 50px;
+    background: $color-sky;
+    border: none;
+    border-radius: 8px;
+}
+.black-thems-settings *{
+    background-color: #404040 !important;
+    fill: #767676 ;
+}

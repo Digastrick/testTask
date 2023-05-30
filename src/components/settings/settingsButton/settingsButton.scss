@@ -1,0 +1,36 @@
+@import '../../../variables/variables.scss';
+.settings__button_white{
+    background-color: $color-white;
+}
+.settings__button_black{
+    background-color: $color-black;
+}
+.settings__button-wrapper{
+    z-index: 1;
+    .settings__button {
+        max-height: 46px;
+    max-width: 350px;
+        height: 100%;
+        width: 100vw;
+        padding: 8px 16px;
+        border-radius: 4px;
+        border:none;
+        color: $color-blue;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        position: relative;
+        &::after{
+            content:'';
+            position: absolute;
+            z-index: -1;
+            top: -.125em;
+            left: -.125em;
+            width: calc(100% + 2px);
+            height: calc(100% + 3px);
+            border-radius: 4px;
+            background: rgb(77,181,228);
+            background: linear-gradient(90deg, rgba(77,181,228,1) 0%, rgba(0,149,217,1) 35%);
+        }
+    }
+}
