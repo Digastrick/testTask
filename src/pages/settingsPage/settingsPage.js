@@ -20,7 +20,8 @@ export const SettingsPage = () => {
 
     return(
         <div className={`settings-page  d-flex flex-column justify-center align-center ${changeThems ? `settings-page_white` : `settings-page_black ${twoFactorVisibility ? `opacity`:``}`}`}>
-        <div onClick={ClickChangeThems}>
+        <div  className='mb-40'
+        onClick={ClickChangeThems}>
         <ChangeThems/>
         </div>
         <Settings
